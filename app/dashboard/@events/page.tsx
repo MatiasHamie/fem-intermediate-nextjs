@@ -13,6 +13,7 @@ const statusColors = {
 
 const EventsSlot = async () => {
   const user = await getCurrentUser()
+  // ver actions/events.ts
   const events = await getEventsForDashboard(user.id)
 
   return (
